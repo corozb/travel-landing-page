@@ -15,7 +15,7 @@ function Navbar() {
       <div className=' hidden lg:block animate-in fade-in zoom-in  p-4 '>
         <div className='flex justify-between items-center'>
           <div>
-            <Image src='/images/logo.png' alt='logo' width={100} height={100} />
+            <Image src='/images/logo.png' alt='logo' width={116} height={116} />
           </div>
           <div className='flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none'>
             <p className={`hover:text-primary text-navText font-[600] cursor-pointer flex items-center gap-2`}>
@@ -46,7 +46,7 @@ function Navbar() {
             <div className='flex gap-2 items-center cursor-pointer'>
               <p className='font-[700]'>EN</p>
               <div>
-                <Image src='/images/chevron-down.png' alt='chevron down' width={20} height={20} />
+                <Image src='/images/chevron-down.png' alt='chevron down' width={16} height={16} />
               </div>
             </div>
           </div>
