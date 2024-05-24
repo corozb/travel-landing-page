@@ -1,0 +1,93 @@
+import React, { forwardRef } from 'react'
+import { Button } from '../ui/button'
+import Image from 'next/image'
+import { Loader2 } from 'lucide-react'
+
+type MainButtonProps = {
+  text: string
+  form?: string
+  isLoading?: boolean
+  action?: () => void
+  isSubmitable?: boolean
+  disabled?: boolean
+  width?: 'full_width' | string
+  dataLoadingText?: string
+  variant?: 'primary' | 'secondary'
+  classes?: string
+  iconRoute?: string
+  rightIconRoute?: string
+  rightIconClass?: string
+  iconComponent?: React.ReactElement
+  size?: 'small' | 'normal' | 'large'
+  isGradient?: boolean
+}
+
+const MainButton = forwardRef<HTMLButtonElement, MainButtonProps>(
+  (
+    {
+      text,
+      isLoading = false,
+      form,
+      action,
+      disabled = false,
+      isSubmitable,
+      width,
+      dataLoadingText = 'Please wait ...',
+      variant = 'primary',
+      classes,
+      iconRoute,
+      rightIconRoute,
+      rightIconClass = 'w-[24px] h-[24px]',
+      iconComponent,
+      size = 'normal',
+      isGradient,
+    },
+    ref
+  ) => {
+    const propWidth = width === 'full_width' ? 'w-full' : width || 'w-[6.375rem]'
+
+    const isSecondaryVariant = variant !== 'primary'
+
+    const size_height = size === 'normal' ? 'h-[2.256rem]' : size === 'large' ? 'h-[2.256rem]' : 'h-[2.625rem]'
+
+    const variant_hover = variant === 'primary' ? 'hover:bg-primary' : 'hover:bg-secondary'
+
+    return !isLoading ? (
+      <Button
+        form={form}
+        className={`${
+          isSecondaryVariant ? ' text-white  bg-secondary' : 'bg-primary'
+        } text-white shadow-xl ${propWidth} md:${propWidth}  select-none hover:opacity-90 ${variant_hover} ${size_height} ${classes} ${
+          isGradient ? 'red-gradient' : ''
+        }`}
+        onClick={!disabled ? action : () => undefined}
+        type={isSubmitable ? 'submit' : 'button'}
+        ref={ref}
+        disabled={disabled}
+      >
+        {iconRoute && <Image src={iconRoute} alt='left button icon' className='w-[24px] h-[24px]' />}
+        {iconRoute && <span>&nbsp;</span>}
+        {iconComponent}
+        {iconComponent && <span>&nbsp;</span>}
+        {text}
+        {rightIconRoute && <span>&nbsp;</span>}
+        {rightIconRoute && <Image src={rightIconRoute} alt='right button icon' className={rightIconClass} />}
+      </Button>
+    ) : (
+      <Button
+        className={`bg-primary text-white ${propWidth} md:${propWidth} select-none cursor-not-allowed ${size_height} ${
+          classes ? classes : ''
+        }`}
+        ref={ref}
+        disabled
+      >
+        <Loader2 className='mr-2 h-4 w-4 animate-spin' />
+        {dataLoadingText}
+      </Button>
+    )
+  }
+)
+
+MainButton.displayName = 'MainButton'
+
+export default MainButton
