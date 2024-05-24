@@ -1,4 +1,5 @@
 import Navbar from '@/components/common/Navbar'
+import CategorySection from '@/components/sections/CategorySection'
 import HeroSection from '@/components/sections/HeroSection'
 import Image from 'next/image'
 
@@ -15,9 +16,9 @@ export default function Home() {
           <Image src='/images/top-left-gradient.png' alt='blob background shape' width={209} height={209} />
         </div>
         <div className='relative'>
-          CategorySection
+          <CategorySection />
           <div className='absolute top-0 right-0'>
-            {/* <img src='/images/plus-group.png' alt='blob background shape' /> */}
+            <Image src='/images/plus-group.png' alt='blob background shape' width={153} height={160} />
           </div>
         </div>
         TopSellingSection BookNextTripSection TestimonialSection LogoGroupSection NewsLetterSection FooterSection
