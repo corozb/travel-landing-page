@@ -1,13 +1,7 @@
 import Image from 'next/image'
+import { CategoriesProps } from './Card.types'
 
-interface IProps {
-  iconUrl: string
-  title: string
-  description: string
-  highlighted: boolean
-}
-
-const CategoryCard = ({ highlighted, title, description, iconUrl }: IProps) => {
+const CategoryCard = ({ highlighted, title, description, iconUrl }: CategoriesProps) => {
   return (
     <div
       className={`flex relative flex-col gap-4 items-center p-[2.5rem] ${

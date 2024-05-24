@@ -1,6 +1,7 @@
 import Navbar from '@/components/common/Navbar'
 import CategorySection from '@/components/sections/CategorySection'
 import HeroSection from '@/components/sections/HeroSection'
+import TopSellingSection from '@/components/sections/TopSellingSection'
 import Image from 'next/image'
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
             <Image src='/images/plus-group.png' alt='blob background shape' width={153} height={160} />
           </div>
         </div>
-        TopSellingSection BookNextTripSection TestimonialSection LogoGroupSection NewsLetterSection FooterSection
+        <TopSellingSection /> BookNextTripSection TestimonialSection LogoGroupSection NewsLetterSection FooterSection
       </div>
     </main>
   )
