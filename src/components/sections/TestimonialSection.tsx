@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import TestimonialCard from '../cards/TestimonialCard'
 
 function TestimonialSection() {

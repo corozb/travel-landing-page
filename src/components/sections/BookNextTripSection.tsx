@@ -1,4 +1,3 @@
-import React from 'react'
 import TripStepCard from '../cards/TripStepCard'
 import Image from 'next/image'
 

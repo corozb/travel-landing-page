@@ -1,4 +1,3 @@
-import React from 'react'
 import { DestinationProps } from './Card.types'
 import Image from 'next/image'
 

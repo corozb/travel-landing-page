@@ -2,6 +2,7 @@ import Navbar from '@/components/common/Navbar'
 import BookNextTripSection from '@/components/sections/BookNextTripSection'
 import CategorySection from '@/components/sections/CategorySection'
 import HeroSection from '@/components/sections/HeroSection'
+import LogoGroupSection from '@/components/sections/LogoGroupSection'
 import TestimonialSection from '@/components/sections/TestimonialSection'
 import TopSellingSection from '@/components/sections/TopSellingSection'
 import Image from 'next/image'
@@ -27,7 +28,8 @@ export default function Home() {
         ;
         <TopSellingSection />
         <BookNextTripSection />
-        <TestimonialSection /> LogoGroupSection NewsLetterSection FooterSection
+        <TestimonialSection />
+        <LogoGroupSection /> NewsLetterSection FooterSection
       </div>
     </main>
   )
