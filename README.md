@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Travel-Agency-Landing-Page
 
-## Getting Started
+A Travel Agency Landing Page built with Next14, Shadcn, and Tailwind.
 
-First, run the development server:
+# ☁️ Deployed link
+
+https://travel-agency-landing-page-zeta.vercel.app/
+
+Youtube: https://youtu.be/psY6VQVcJRA
+
+Figma: https://www.figma.com/file/p53sK0QS4IPLb864z3PFc0/Travel-Website-Landing-Page-(Community)?node-id=1%3A432&mode=dev
+
+# 💻 Desktop View
+
+![screencapture-travel-agency-landing-page-zeta-vercel-app-2023-12-26-20_07_31](https://github.com/PiusLucky/Travel-Agency-Landing-Page/assets/32282934/5ea69783-d8f8-4088-8bc2-ef14b934e2d1)
+
+# 📱 Mobile View
+
+![screencapture-travel-agency-landing-page-zeta-vercel-app-2023-12-26-20_07_54](https://github.com/PiusLucky/Travel-Agency-Landing-Page/assets/32282934/a462d32d-3880-4c52-9031-21e6a84d71da)
+
+# ⛏️ Installation
+
+To follow along the tutorial. Change to the starter branch after cloning the repo.
+Then install the npm packages & run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install && npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔓 Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next14
+- Typescript
+- Shadcn
+- Tailwind
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🔓 Benefits
 
-## Learn More
+- Mobile Responsiveness
+- Learn all the stack in one video
 
-To learn more about Next.js, take a look at the following resources:
+## Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Built with love ❤️ by Pius Lucky https://luckypius.netlify.app/
