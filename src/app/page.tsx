@@ -1,6 +1,7 @@
 import Navbar from '@/components/common/Navbar'
 import BookNextTripSection from '@/components/sections/BookNextTripSection'
 import CategorySection from '@/components/sections/CategorySection'
+import FooterSection from '@/components/sections/FooterSection'
 import HeroSection from '@/components/sections/HeroSection'
 import LogoGroupSection from '@/components/sections/LogoGroupSection'
 import NewsLetterSection from '@/components/sections/NewsLetterSection'
@@ -31,7 +32,8 @@ export default function Home() {
         <BookNextTripSection />
         <TestimonialSection />
         <LogoGroupSection />
-        <NewsLetterSection /> FooterSection
+        <NewsLetterSection />
+        <FooterSection />
       </div>
     </main>
   )
